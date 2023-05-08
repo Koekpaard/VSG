@@ -1,12 +1,16 @@
-﻿using System;
-
-namespace VSG // Note: actual namespace depends on the project name.
+﻿namespace VSG
 {
     internal class Program
     {
+        private const string HELP_SHORT = "Graag een temperatuurbestand als arg meegeven";
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            if (!args.Any())
+                Console.WriteLine(HELP_SHORT);
+
+            FileReader reader = new FileReader(true);
+            reader.ReadFile(args[0]);
         }
     }
 }
