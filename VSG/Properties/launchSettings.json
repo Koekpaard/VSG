@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "VSG": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Projects\\Personal\\VSG\\temperature.dat\""
+    }
+  }
+}
